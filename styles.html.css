@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3ca56b;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.register-btn {
+    background: #3ca56b;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('https://t4.ftcdn.net/jpg/05/52/29/18/360_F_552291858_Gn4rqQZgK9MhUlCT3VkOITkkpFmSPrBR.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 12px;
+    width: 220px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    background: #3ca56b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* INTERNSHIP CARDS */
+.cards-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.learn-btn {
+    margin-top: 10px;
+    background: #3ca56b;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+}

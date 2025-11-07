@@ -1,0 +1,174 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>SORATECH</title>  <!-- ====== CSS Merged Here ====== -->  
+<style>  
+    * {  
+        margin: 0;  
+        padding: 0;  
+        box-sizing: border-box;  
+        font-family: Arial, sans-serif;  
+    }  
+
+    body {  
+        background: #f5f5f5;  
+    }  
+
+    /* NAVBAR */  
+    header {  
+        display: flex;  
+        justify-content: space-between;  
+        align-items: center;  
+        padding: 20px 60px;  
+        background: white;  
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+    }  
+
+    .logo {  
+        font-size: 22px;  
+        font-weight: bold;  
+        color: #3ca56b;  
+    }  
+
+    nav a {  
+        margin: 0 12px;  
+        text-decoration: none;  
+        color: #333;  
+    }  
+
+    .register-btn {  
+        background: #3ca56b;  
+        color: white;  
+        padding: 8px 14px;  
+        border: none;  
+        border-radius: 6px;  
+    }  
+
+    /* HERO SECTION */
+
+.hero {
+text-align: center;
+padding: 60px 20px;
+background: url('team.jpg') center/cover no-repeat;
+color: #fff;
+backdrop-filter: brightness(0.7);
+}
+
+.hero h1 {
+font-size: 36px;
+margin-bottom: 10px;
+text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.hero p {
+font-size: 16px;
+margin-bottom: 25px;
+text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+/* SEARCH BOX */  
+    .search-box {  
+        display: flex;  
+        justify-content: center;  
+        gap: 10px;  
+    }  
+
+    .search-box input {  
+        padding: 12px;  
+        width: 220px;  
+        border-radius: 6px;  
+        border: none;  
+    }  
+
+    .search-box button {  
+        padding: 12px 20px;  
+        background: #3ca56b;  
+        color: white;  
+        border: none;  
+        border-radius: 6px;  
+    }  
+
+    /* INTERNSHIP CARDS */  
+    .cards-section {  
+        display: flex;  
+        justify-content: center;  
+        gap: 20px;  
+        padding: 50px;  
+    }  
+
+    .card {  
+        background: white;  
+        width: 250px;  
+        text-align: center;  
+        padding: 20px;  
+        border-radius: 10px;  
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+    }  
+
+    .card img {  
+        width: 120px;  
+        margin-bottom: 10px;  
+    }  
+
+    .learn-btn {  
+        margin-top: 10px;  
+        background: #3ca56b;  
+        color: white;  
+        padding: 8px 20px;  
+        border: none;  
+        border-radius: 6px;  
+    }  
+</style>
+
+</head>  
+<body>  <!-- Header / Navigation Bar -->  
+<header>  
+    <div class="logo">SORATECH</div>  
+    <nav>  
+        <a href="#">Explore Internships</a>  
+        <a href="#">About</a>  
+        <a href="#">Contact</a>  
+        <a href="#">Login</a>  
+        <button class="register-btn">Register</button>  
+    </nav>  
+</header>  
+
+<!-- Hero Section -->  
+<section class="hero">  
+    <h1>Find Tech Internship Opportunities</h1>  
+    <p>Connecting with verified employers and managing every stage of your internship search journey.</p>  
+
+    <div class="search-box">  
+        <input type="text" placeholder="Job or keyword">  
+        <input type="text" placeholder="City or zip code">  
+        <button>Search</button>  
+    </div>  
+</section>  
+
+<!-- Internship Cards Section -->  
+<section class="cards-section">  
+    <div class="card">  
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Meta_Platforms_Inc._logo.svg/2560px-Meta_Platforms_Inc._logo.svg.png" alt="Meta">  
+        <h3>Software Dev (Intern)</h3>  
+        <p>Meta</p>  
+        <button class="learn-btn">Learn More</button>  
+    </div>  
+
+    <div class="card">  
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">  
+        <h3>IT Support Intern</h3>  
+        <p>Google</p>  
+        <button class="learn-btn">Learn More</button>  
+    </div>  
+
+    <div class="card">  
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/BlackRock_logo.svg/2560px-BlackRock_logo.svg.png" alt="BlackRock">  
+        <h3>UI/UX Intern</h3>  
+        <p>BlackRock</p>  
+        <button class="learn-btn">Learn More</button>  
+    </div>  
+</section>
+
+</body>  
+</html>

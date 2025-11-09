@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application</title>
+
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background: #dcdfe4;
+            margin: 0;
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 430px;
+            background: #fff;
+            padding: 20px 25px 25px;
+            border-radius: 7px;
+            border: 1px solid #c4c6ca;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0 0 15px;
+            font-weight: 600;
+            font-size: 21px;
+        }
+
+        label {
+            display: block;
+            margin-top: 14px;
+            font-size: 14.5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        select,
+        textarea {
+            width: 100%;
+            margin-top: 4px;
+            padding: 9px 10px;
+            border-radius: 5px;
+            border: 1px solid #8d8d8d;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        #count {
+            text-align: right;
+            font-size: 12px;
+            color: #555;
+            margin-top: 3px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 18px;
+            padding: 10px;
+            background: #2763d4;
+            border: none;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background: #1c4ea8;
+            }
+
+        #note {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <h2>Internship Application</h2>
+
+        <form id="applyForm">
+
+            <label>Full Name *</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email *</label>
+            <input type="email" name="email" required>
+
+            <label>Resume (PDF)</label>
+            <input type="file" name="resume" accept="application/pdf" required>
+
+            <label>Cover Letter *</label>
+            <textarea name="cover" id="cover" maxlength="500" required></textarea>
+            <div id="count">0 / 500</div>
+
+            <label>Status</label>
+            <select name="status">
+                <option value="submitted">Submitted</option>
+                <option value="reviewing">Under Review</option>
+                <option value="scheduled">Interview Scheduled</option>
+                <option value="accepted">Accepted</option>
+                <option value="rejected">Rejected</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+            <div id="note"></div>
+        </form>
+
+    </div>
+
+    <script>let textBox = document.getElementById("cover");
+    let counter = document.getElementById("count");
+    let form = document.getElementById("applyForm");
+    let note = document.getElementById("note");
+
+    textBox.oninput = function(){
+        counter.innerText = textBox.value.length + " / 500";
+    };
+
+    form.onsubmit = function(ev){
+        ev.preventDefault();
+        note.style.color = "green";
+        note.innerText = "Application sent successfully.";
+    };</script>
+
+</body>
+</html>

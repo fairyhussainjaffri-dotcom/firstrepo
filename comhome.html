@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SORATECH — Internships</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        :root {
+            --brand: #43b57b;
+            --brand-dark: #2f7f59;
+            --text: #1b1b1b;
+            --light: #ffffff;
+            --radius: 14px;
+            --shadow: 0 12px 36px rgba(0,0,0,0.09);
+            --space-1: 8px;
+            --space-2: 14px;
+            --space-3: 22px;
+            --space-4: 36px;
+            --space-5: 60px;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+
+        body {
+            background: #fafafa;
+            color: var(--text);
+            line-height: 1.55;
+        }
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--space-3) var(--space-5);
+            background: #fff;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+            z-index: 50;
+        }
+
+        .header__logo {
+            font-size: 26px;
+            font-weight: 600;
+            color: var(--brand);
+            letter-spacing: 0.5px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            margin: 0 16px;
+            color: #444;
+            font-weight: 500;
+        }
+
+        .btn-fill {
+            background: var(--brand);
+            color: var(--light);
+            border: none;
+            border-radius: var(--radius);
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: 250ms ease;
+        }
+
+            .btn-fill:hover {
+                background: var(--brand-dark);
+            }
+
+
+        .main-hero-banner {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), url('team.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 0 20px;
+        }
+
+            .main-hero-banner h1 {
+                font-size: 42px;
+                font-weight: 600;
+                margin-bottom: var(--space-2);
+            }
+
+            .main-hero-banner p {
+                max-width: 600px;
+                opacity: .95;
+            }
+
+
+        .search-bar {
+            display: flex;
+            gap: var(--space-2);
+            margin-top: var(--space-3);
+        }
+
+            .search-bar input {
+                padding: var(--space-2);
+                width: 210px;
+                border-radius: var(--radius);
+                border: none;
+                outline: 0;
+            }
+
+
+        .internship-listing {
+            padding: var(--space-5) var(--space-3);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: var(--space-4);
+        }
+
+        .internship-card {
+            background: #fff;
+            width: 280px;
+            padding: var(--space-4) var(--space-3);
+            text-align: center;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            transition: 280ms cubic-bezier(.2,.8,.4,1);
+        }
+
+
+            .internship-card:hover {
+                transform: translateY(-8px) rotate(-0.35deg) scale(1.02);
+            }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__logo">SORATECH</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Internships</a>
+            <a href="#">Contact</a>
+            <a href="#">Login</a>
+            <button class="btn-fill">Register</button>
+        </nav>
+    </header>
+
+
+    <section class="main-hero-banner">
+        <h1>Find Tech Internship Opportunities</h1>
+        <p>Connecting students with trusted companies and guiding every phase of your internship journey — from search to success.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Job or Keyword">
+            <input type="text" placeholder="City or Zip">
+            <button class="btn-fill">Search</button>
+        </div>
+    </section>
+
+
+    <section class="internship-listing">
+
+        <div class="internship-card">
+            <h3>Software Dev (Intern)</h3>
+            <p>Meta</p>
+            <button class="btn-fill">Learn More</button>
+        </div>
+
+        <div class="internship-card">
+            <h3>IT Support Intern</h3>
+            <p>Google</p>
+            <button class="btn-fill">Learn More</button>
+        </div>
+
+        <div class="internship-card">
+            <h3>UI/UX Intern</h3>
+            <p>BlackRock</p>
+            <button class="btn-fill">Learn More</button>
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Internship</title>
+
+    <style>
+        body {
+            font-family: Cambria, sans-serif;
+            background: #d7dbe0;
+            margin: 0;
+            padding: 45px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-card {
+            width: 420px;
+            background: #ffffff;
+            padding: 22px 24px;
+            border-radius: 8px;
+            border: 1px solid #babdc2;
+            box-shadow: 0 0 4px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 0 18px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .field-label {
+            margin-top: 15px;
+            font-size: 15px;
+            display: block;
+        }
+
+        .input-box,
+        .select-box,
+        .text-area {
+            width: 100%;
+            padding: 9px 10px;
+            margin-top: 4px;
+            border-radius: 5px;
+            border: 1px solid #7f7f7f;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .text-area {
+            resize: vertical;
+            min-height: 85px;
+        }
+
+        .counter {
+            text-align: right;
+            font-size: 12px;
+            color: #666;
+            margin-top: 3px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background: #255dc5;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+            .submit-btn:hover {
+                background: #1d4a9c;
+            }
+
+        .msg {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-card">
+        <h1>Apply for Internship</h1>
+
+        <form id="internForm">
+
+            <label class="field-label">Full Name *</label>
+            <input type="text" class="input-box" name="fullName" required>
+
+            <label class="field-label">Email Address *</label>
+            <input type="email" class="input-box" name="email" required>
+
+            <label class="field-label">Upload Resume (PDF Only)</label>
+            <input type="file" class="input-box" name="resume" accept="application/pdf" required>
+
+            <label class="field-label">Cover Letter *</label>
+            <textarea id="clBox" class="text-area" name="cover" maxlength="500" required></textarea>
+            <div id="clCount" class="counter">0 / 500</div>
+
+            <label class="field-label">Application Status</label>
+            <select name="progress" class="select-box">
+                <option>Submitted</option>
+                <option>Under Review</option>
+                <option>Interview Scheduled</option>
+                <option>Accepted</option>
+                <option>Rejected</option>
+            </select>
+
+            <button class="submit-btn" type="submit">Send Application</button>
+            <div id="result" class="msg"></div>
+
+        </form>
+    </div>
+
+</body>
+</html>
